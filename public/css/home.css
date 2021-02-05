@@ -1,0 +1,712 @@
+#qrcode_img{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+   }
+
+   
+   
+   
+
+   .logo_img{
+    width: 60%;
+   }
+   
+   .div_qrcode_imagem{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       width: 85%;
+   }
+   
+   .radio_input{
+       align-items: flex-start!important;
+   }
+
+   #cards_index{
+       display: flex;
+       justify-content: space-around;
+       background: #fff;
+   }
+
+   .cards{
+       margin: 10px;
+       text-align: center;
+       padding: 5px;
+       width: 20%;
+       justify-content: space-between;
+       background:  #ecedf0;
+       display: flex;
+       flex-direction: column;
+       border-radius: 10px;
+       box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+   }
+
+   .cards p{
+       font-weight: 600;
+   }
+
+   .btn_cards{
+       background: #252977;
+       font-weight: 500;
+       border-radius: 25px;
+       color: #ecedf0;
+       box-shadow: 0px 10px 20px rgba(0,0,0,0.5);
+       border: none;
+       padding: 5px;
+       margin-bottom: 10px;
+   }
+
+   .btn_cards:hover{
+        background: #fb0b04;
+   }
+   
+   .radio_input input{
+       text-align: center;
+   }
+   .btn_geraqrcode_index{
+       border: none;
+       padding: 15px;
+       margin: 30px;
+       font-size: 1.8rem;
+       font-weight: 500;
+       border-radius: 40px;
+       background: #252977;
+       color: #ecedf0;
+       box-shadow: 0px 10px 20px rgba(0,0,0,0.5);
+       transition: .5s;
+       /* width: 50%; */
+   }
+   
+   .btn_geraqrcode_index:hover{
+       background: #fb0b04;
+   }
+   
+   .carousel-inner, .carousel {
+    border-radius: 20px!important;
+   }
+
+   .itens_menu{
+       display: flex;
+   }
+
+   .perguntas{
+    padding-right: 30px;
+   }
+   
+   #perguntas_frequentes{
+        background: #fff;
+        width: 100%;
+        display: flex;
+   }
+
+   .pergunta-frequente{
+       background: #fff;
+       border-radius: 50px;
+       padding: 13px;
+       box-shadow: 0px 5px 7px rgba(0,0,0,0.5);
+       margin-bottom: 15px;
+       text-align: center;
+   }
+
+   .pergunta-frequente h1{
+       font-size: 1.3rem;
+   }
+
+   .titulo_perguntas{
+       text-align: center;
+   }
+
+   .titulo_perguntas .fas{
+       color: #ff0e27;
+   }
+
+   .pergunta-frequente p{
+       font-weight: 500;
+   }
+
+   .img_perguntas{
+       width: 100vh;
+   }
+
+   .menu_superior{
+       background: #1d1b1b!important;
+       margin-bottom: 10px!important;
+       box-shadow: 0px 2px 15px rgba(0,0,0,0.5);
+       padding: 10px;
+       align-items: center;
+       justify-content: center;
+       margin-bottom: 0px!important;
+   }
+
+   #menu_superior_mobile{
+    background: #1d1b1b!important;
+   }
+
+   .logo_mobile{
+       width: 100%
+   }
+
+   .navbar-brand{
+       width: 50%;
+   }
+
+   .navbar-light .navbar-nav .nav-link{
+    color: #ecedf0!important;
+    font-weight: 700;
+   } 
+
+   .navbar-light .navbar-toggler{
+       background: #ecedf0;
+   }
+
+   .nav-link{
+       color: #ecedf0;
+       font-weight: 500;
+       border: 1px solid #f65026!important;
+       border-radius: 25px!important;
+   }
+   
+   .nav-link:hover{
+       color: #FF551B;
+   }
+   
+   .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+       background: #ecedf0!important;
+       color: #000!important;
+       border: none!important;
+   }
+
+   i.fab.fa-apple.icon_input{
+       font-size: 2.5rem;
+   }
+   
+   #link_download{
+       display: none;
+   }
+   
+   .div_form_input {
+       display: flex!important;
+       flex-direction: column;
+       align-items: center;
+   }
+   
+   .input_input{
+       display: flex;
+       align-items: center;
+       margin-bottom: 5px;
+   }
+   
+   .icon_input{
+       margin: 5px;
+       font-size: 2rem;
+       padding-bottom: 7px;
+   }
+   
+   .input_input p{
+       font-size: 1.5rem;
+       padding-bottom: 7px;
+   }
+   
+   
+   .qrcode_img-dados{
+    width: 100%;
+   }
+   
+   .qrcode_imagem{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #000;
+   }
+   
+   body{
+    background: #ecedf0!important;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+   }
+   
+   #gerador_qrcode{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+   }
+   
+   #qrcode{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+   }
+
+   .carousel{
+       width: 75%!important;
+   }
+   
+   #formQRCode{
+    background: #ecedf0;
+    padding: 5px 19px 5px 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 30px #000;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    align-items: center;
+   }
+
+   .nav-item{
+    border-radius: 25px;
+    margin: 10px;
+   }
+   
+   .label_qrcode{
+    font-size: 1.3rem;
+    text-align: center;
+    cursor: pointer;
+    padding-left: 36px;
+   }
+   
+   .radio{
+       background: #000;
+       padding: 10px;
+       background: #eaeaea;
+       border-radius: 10px;
+       display:none!important;
+   }
+   
+   .input_qrcode{
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 6px 1px;
+    text-align: center;
+    cursor: pointer;
+    width: 250px;
+   }
+   
+   .btn_gerar-qrcode{
+       border: none;
+       padding: 8px;
+       font-size: 1.5rem;
+       width: 100%;
+       font-weight: 500;
+       border-radius: 27px;
+       background: #fa0000;
+       color: #ecedf0;
+       box-shadow: 0px 10px 20px rgba(0,0,0,0.5);
+       transition: .5s;
+       margin-top: 30px;
+   }
+   
+   .btn_gerar-qrcode:hover{
+       background: #FF551B;
+   }
+   
+   #infos-index{
+       background: linear-gradient(201deg, #FF551B 1%, #fa0000 100%);
+       padding: 10px;
+       margin: 36px auto 0;
+       width: 100%;
+       text-align: center;
+       box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+       display: flex;
+       justify-content: space-around;
+   }
+
+   .img_index{
+       width: 100%;
+   }
+
+   .icon_infos{
+       width: 35%;
+   }
+   
+   #infos-index p{
+       font-weight: 500;
+       color: #EDF2F8;
+       margin: 0;
+   }
+
+   #botao_gerarQRCODE_index{
+       width: 100%;
+       background: linear-gradient(201deg, #FF551B 1%, #fa0000 100%);
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+   }
+
+   .div_qrappsite{
+       display: flex;
+       justify-content: space-around;
+   }
+
+   #botao_gerarQRCODE_index h1{
+       margin: 20px;
+       color: #ecedf0;
+       text-shadow: 6px 4px 16px rgba(0,0,0,0.5);
+   }
+
+   .div_qrappsite div{
+    width: 20%;
+    text-align: center;
+    background: #ecedf0;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    border: 3px solid #000332;
+    box-shadow: 0px 5px 20px #ff882c;
+   }
+
+   #botao_gerarQRCODE_index a{
+       margin: auto;
+   }
+
+   .info-index_p{
+    margin-top: 5px;
+    padding-bottom: 8px;
+    width: 25%;
+   }
+   
+   .titulo_qrcode{
+    font-size: 1.2rem;
+    background: linear-gradient(201deg, #FF551B 1%, #fa0000 100%);
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 26px #000;
+    padding: 6px;
+    margin-top: 15px;
+    width: auto;
+   }
+   
+   #carrossel{
+       width: 100%;
+       margin-top: 15px;
+   }
+   
+   .carousel{
+       width: 50%;
+       margin: auto;
+       box-shadow: 0px 7px 13px black;
+   }
+   
+   #rodape{
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       padding: 10px;
+       background: linear-gradient(201deg, #FF551B 1%, #fa0000 100%);
+       color: #ecedf0;
+       box-shadow: 0px -1px 10px rgba(0,0,0,0.5);   
+   }
+   
+   #rodape a{
+       text-decoration: underline;
+       color: #ecedf0;
+   }
+
+   .texto_index{
+    text-align: center;
+    background-repeat: repeat;
+   }
+   
+   .texto_index h1{
+    font-size: 2rem;
+    text-shadow: 0px 0px 13px #ffdb26;
+   }
+
+   .btn_mobile{
+    display: none;
+    }
+
+
+
+   @media screen and (max-width: 1050px) and (min-width: 751px){
+
+    #perguntas_frequentes{
+        flex-direction: column;
+    }
+
+    .img_perguntas{
+        width: 100vw;
+    }
+
+    .logo_img{
+        width: 100%;
+    }
+
+    #logo{
+        width: 20%;
+        margin-bottom: 7px
+    }
+
+    .menu_superior{
+        flex-direction: column;
+    }
+
+    .pergunta-frequente{
+        width: 45%;
+    }
+
+    .perguntas_respostas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .perguntas{
+        margin: auto;
+        width: 85%;
+        padding: 0;
+    }
+
+    #cards_index{
+        flex-wrap: wrap;
+    }
+
+    .cards{
+        width: 40%;
+    }
+
+   }
+
+   @media screen and (max-width: 750px) and (min-width: 450px){
+
+    .navbar-brand{
+        width: 40%;
+    }
+   }
+   
+   @media screen and (max-width: 750px) and (min-width: 0px){
+
+        #carrossel{
+            margin: 0;
+        }
+
+        .nav-link{
+            border:none!important;
+        }
+
+        .perguntas{
+            padding: 0;
+            width: 90%;
+            margin: auto;
+        }
+
+        #perguntas_frequentes{
+            flex-direction: column;
+        }
+
+        .img_perguntas{
+            width: 100vw;
+        }
+
+        .img_index{
+            margin-top: -2px;
+        }
+        
+        .carousel{
+            width: 100%!important;
+        }
+
+        .btn_mobile{
+            display: block;
+        }
+   
+       .carousel{
+           width: 100%;
+           box-shadow: none;
+       }
+
+       #formQRCode{
+           width: 90%;
+           padding-right: 0px!important;
+           padding-bottom: 20px!important;
+       }
+
+       #cards_index{
+           flex-direction: column;
+       }
+
+       .cards, .div_qrappsite div{
+           width: 80%;
+           margin: 15px auto;
+           padding: 15px;
+       }
+
+       #botao_gerarQRCODE_index h1{
+           font-size: 1.8rem;
+       }
+
+       .div_qrappsite{
+           flex-direction: column;
+       }
+
+       
+       .btn_cards{
+           width: 68%;
+           padding: 10px;
+           font-size: 1.2rem;
+       }
+   
+       .carousel-inner, .carousel {
+           border-radius: 0px!important;
+       }
+   
+       .menu_superior{
+        margin-bottom: 0!important;
+       }
+       
+       #infos-index{
+           margin: 0 auto ; 
+           flex-direction: column;
+       }
+   
+       #infos-index p{
+           font-size: 1.2rem;
+       }
+
+       .info-index_p{
+        border-bottom: 2px solid #ecedf0;
+        padding-bottom: 8px;
+        width: 80%;
+        margin: 0 auto 10px;
+       }
+   
+       .btn_geraqrcode_index{
+           margin-bottom: 20px;
+           font-size: 1.8rem;
+       }
+   
+        .info-index_p:nth-child(4){
+           border-bottom: none;
+           padding-bottom: 0;
+       }
+   
+       #rodape{
+           text-align: center;
+       }
+   
+       #qrcode{
+           flex-direction: column;
+           padding-left: 0px;
+           width: 100%;
+           margin-top: 0!important;
+          }
+          
+          .titulo_qrcode{
+              margin: 10px auto;
+              width: 150px;
+              padding: 5px;
+              font-size: 1.3rem;
+              font-weight: 500;
+              box-shadow: 0px 4px 14px black;
+          }
+          
+          #qrcode_img{
+              display: none;
+          }
+
+          .input_input {
+            width: 120%;
+         }
+          
+          .label_qrcode {
+            font-size: 1.5rem;
+            font-weight: 500;
+          }
+          
+          .input_qrcode{
+            padding: 10px;
+            width: 77%;
+            font-size: 1.2rem;
+          }
+          
+          .div_form_input{
+            margin: 10px auto;
+            width: 85%;
+          }
+          
+          .icon_input{
+           font-size: 2rem;
+           margin-right: 10px;
+           padding-bottom: 0px!important;
+          }
+          
+          .btn_gerar-qrcode{
+              width: 240px;
+              padding: 10px;
+              font-size: 1.5rem;
+              box-shadow: 0px 4px 14px black;
+              margin-top: 25px;
+          }       
+   
+          i.fab.fa-apple.icon_input {
+           font-size: 3rem;
+           margin-right: 10px;
+          }
+
+          .modal_qr{
+              margin-top: 80px!important;
+              width: 80%!important;
+          }
+
+          .modal_qr h1{
+            font-size: 1.3rem;
+        }
+
+        .modal_input_envia-email{
+          display: flex;
+          flex-direction:column;
+          margin: 5px!important;
+          align-items: center;
+        }
+
+        #input_email_contato{
+            width:100%
+        }
+
+        #btnn_modal{
+            width: 75%!important;
+        }
+
+        .btn_modal_envia-email{
+            width: 75%!important;
+            margin-top: 15px!important;
+            margin-bottom: 25px;
+        }
+
+        .btn_modal_qrgerado-sucesso{
+            font-size: 1.2rem!important;
+            width: 75%!important;
+            margin-top: 10px!important;
+            margin-bottom: 5px;
+            padding: 7px!important;
+        }
+
+        #btn_modal{
+            width: 50%;
+            padding: 20px;
+            font-size: 2.5rem;
+            margin-top: 80px;
+        }
+    
+        .modal_contato{
+            width: 75%!important;
+        }
+        
+        #textareaContato{
+            width: 100%;
+        }
+    
+        .btn_modal_contato{
+            width: 75%!important;
+            margin-top: 10px!important;
+            font-size: 1.3rem!important;
+            padding: 10px!important;
+        }
+   }
+   

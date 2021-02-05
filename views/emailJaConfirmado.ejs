@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="shortcut icon" href="/upload/favicon.ico">
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="/css/email.css">
+        <link rel="stylesheet" type="text/css" href="/css/home.css">
+        <link rel="stylesheet" type="text/css" href="/css/modal.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Email Confirmado - Gera QRCODE</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <section id="email">
+                <div class="email">
+                    <div id="titulo_email">
+                        <p>Seu Email Já Está Confirmado ✔️</p>
+                    </div>
+                    <div id="corpo_email" style="text-align: center;">
+                        <p class="subtit_corpoEmail">NÃO RECEBEU SEU QRCODE ?</p> 
+                        <p>Seu email já foi confirmado em outro momento, caso não tenha recebido as URL's para download ou necessite que seja enviado novamente, clique no <b>botão abaixo</b> para receber um novo email</p>
+                        <button class="btn_envioQrCode" onclick="reenviaQrCodeEmailConfirmado()">PRECISO DO QRCODE NOVAMENTE</button>
+                        <p>Qualquer dúvida nos avise 😉</p>
+                    </div>
+                    <div id="rodape_email">
+                        Gera QRCODE - 📧 Atendimento ao cliente: <a href="mailto:contato@geraqrcode.com.br" class="email_link">contato@geraqrcode.com.br</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section id="modal">
+
+            </section>
+        </footer>
+        <script type="text/javascript" src="/js/email.js"></script>
+        <script type="text/javascript" src="/js/modal.js"></script>
+    </body>
+</html>

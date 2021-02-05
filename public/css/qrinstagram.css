@@ -1,0 +1,53 @@
+body{
+    background-image: url('/upload/instagram-back.jpg')!important;
+    background-attachment: fixed!important;
+    backdrop-filter: brightness(55%);
+}
+
+
+#formQRCode{
+    background: linear-gradient(201deg, #feda75 1%,#d62976,#962fbf,#4f5bd5 100%);
+    padding: 40px 19px 40px 10px!important;
+}
+
+.icon_input{
+    color: #ecedf0;
+}
+
+.label_qrcode{
+    color: #ecedf0;
+}
+
+.btn_mobile{
+    display: none;
+}
+
+@media screen and (max-width: 750px) and (min-width: 0px){
+
+    body{
+        background-image: url('/upload/back-instagram-mobile.png')!important;
+        background-repeat: no-repeat!important;
+        background-color: #fff!important;
+        background-attachment: fixed!important;
+    }
+
+    #formQRCode{
+        background: #ecedf0;
+        padding-top: 10px!important;
+        padding-right: 10px!important;
+    }
+    
+    .icon_input{
+        color: #000;
+    }
+    
+    .label_qrcode{
+        color: #000;
+    }
+
+    .btn_mobile{
+        display: block;
+    }
+
+
+}

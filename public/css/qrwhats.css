@@ -1,0 +1,22 @@
+body{
+    background-image: url('/upload/back-whats.jpg')!important;
+    background-repeat: round!important;
+    backdrop-filter: brightness(55%);
+    background-attachment: fixed!important;
+}
+
+.btn_mobile{
+    display: none;
+}
+
+@media screen and (max-width: 750px) and (min-width: 0px){
+
+    body{
+        background-image: url('/upload/back-whats-mobile.png')!important;
+    }
+
+    .btn_mobile{
+        display: block;
+    }
+
+}

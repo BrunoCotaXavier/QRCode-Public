@@ -1,0 +1,31 @@
+#table{
+    margin: 20px auto;
+    text-align: center;
+    min-width: 1000px;
+}
+
+.btn_relatorio{
+    margin: 5px auto;
+    padding: 5px;
+}
+
+tr{
+    border: 1px solid black;
+}
+
+td{
+    padding: 5px;
+    border: 1px solid black;
+}
+
+th{
+    padding: 5px;
+    border: 1px solid black;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+th:hover{
+    background: #a3c5a3;
+}
+

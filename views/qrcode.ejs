@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179102194-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-179102194-1');
+    </script>
+    
+    <link rel="shortcut icon" href="upload/favicon.ico">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+ <body>
+  <script>
+
+    var ativo = '<%- dados.ativo %>';
+    var tipoqr = '<%- dados.tipo_qrcode %>';  
+    var idCliente = '<%- idCliente %>';
+    var google = '<%- dados.google_play %>';
+    var apple = '<%- dados.apple_store %>';
+    var site = '<%- dados.site %>'; 
+    var whatsapp = '<%- dados.whatsapp %>';
+    var instagram = '<%- dados.instagram %>';
+    var facebook = '<%- dados.facebook %>';
+    var linkedin = '<%- dados.linkedin %>';
+    var id = '<%- id %>';
+
+    function tipoDeQR(tipoqr){
+
+      if(ativo == 'nao'){
+        location.assign(`https://geraqrcode.com.br/desativado`);
+      }
+
+      if(tipoqr === 'app'){
+        verificaDados(site, google, apple, id, idCliente)
+      }
+
+      if(tipoqr === 'whatsapp'){
+        redireciona(whatsapp, whatsapp, whatsapp, id, idCliente)
+      }
+
+      if(tipoqr === 'instagram'){
+        redireciona(instagram, instagram, instagram, id, idCliente)
+      }
+
+      if(tipoqr === 'facebook'){
+        redireciona(facebook, facebook, facebook, id, idCliente)
+      }
+
+      if(tipoqr === 'linkedin'){
+        redireciona(linkedin, linkedin, linkedin, id, idCliente)
+      }
+    }
+
+    function verificaDados(site, google, apple, id, idCliente){
+      
+      if(google != site){
+        google = `play.google.com/store/apps/details?id=${google}`;
+      }
+      if(apple != site){
+        apple = `apps.apple.com/br/app/id${apple}`;
+      }
+
+      redireciona(site, google, apple,id, idCliente);
+    }
+
+
+
+    function enviaDados(id, idCliente, origem){
+
+      $.ajax({
+        method: "POST",
+        url: "/contavisitas",
+        data: {idCliente: `${idCliente}`, ID: `${id}`, origem: `${origem}` }
+        }).done(function(){
+        
+      })
+    }
+
+   function redireciona(site,google,apple,id, idCliente){
+
+    if(navigator.userAgent.match(/Android|Tablet/i)){
+     location.assign(`https://${google}`); 
+     enviaDados(id, idCliente, 'visitas_android');
+    }
+    if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){
+     location.assign(`https://${apple}`); 
+     enviaDados(id, idCliente, 'visitas_apple');
+    }
+    if(screen.width > 1000){
+     location.assign(`https://${site}`); 
+     enviaDados(id, idCliente, 'visitas_desktop');
+    } 
+
+   }
+
+  tipoDeQR(tipoqr);
+   
+  </script>
+    
+ </body>
+</html>

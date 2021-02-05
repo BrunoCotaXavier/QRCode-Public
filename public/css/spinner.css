@@ -1,0 +1,24 @@
+#spinner{
+    z-index: 3000;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    top: 0px;
+    left: 0px;
+    justify-content: center;
+    align-items: center;   
+    display: none;
+}
+
+.spinner{
+    display: block!important;
+    color: white;
+    width: 70%;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    margin-top: 150px;
+}

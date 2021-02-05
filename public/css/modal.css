@@ -1,0 +1,162 @@
+#modal{
+    z-index: 3000;
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    top: 0px;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+    display: none;    
+}
+
+.modal_qr h1{
+    font-size: 1.5rem;
+}
+
+.modal_qr{
+    background-color: #fff;
+    width: 55%;
+    padding: 10px;
+    box-shadow: 0px 5px 10px #252525;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.modal_envio_email{
+    width: 25%!important;
+}
+
+.modal_aviso-form{
+    width: 20%;
+}
+
+.modal_aviso-form h1{
+    font-size: 1.5rem;
+}
+
+.btn_modal_aviso-form{
+    font-size: 1rem!important;
+}
+
+.modal_qrgerado-sucesso p{
+    margin: 1rem;
+}
+
+#btn_modal{
+    width: 25%;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 2px 6px black;
+    cursor: pointer;
+    background: #FF551B;
+    transition: .8s;
+    color: #ecedf0;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+#btn_modal:hover{
+    background: #fa0000;
+}
+
+.btn_modal_envia-email{
+    width: 18%;
+    font-size: 1rem!important;
+    padding: 5px!important;
+}
+
+.modal_input_envia-email input{
+    width: 32%;
+    margin-right: 8px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.modal_input_envia-email{
+    margin: 20px;
+}
+
+.modal_contato{
+    width: 44%!important;
+}
+
+.btn_modal_contato{
+    width: 35%!important;
+}
+
+.input_contato input{
+    width: 55%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.input_contato{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+
+#textareaContato{
+    padding: 8px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 980px) and (min-width: 751px){
+    #btn_modal{
+        font-size: 1.5rem;
+        padding: 10px!important;
+    }
+
+}
+
+@media screen and (max-width: 980px) and (min-width: 0px){
+
+    .modal_qrgerado-sucesso{
+        height: 50%;
+        margin-top: 50%;
+        padding: 10px;
+    }
+
+    .modal_qrgerado-sucesso h1{
+        font-size: 4rem;
+    }
+
+    .modal_qrgerado-sucesso p{
+        font-size: 2.3rem;
+    }
+
+    #btn_modal{
+        width: 50%;
+        padding: 20px;
+        margin-top: 80px;
+    }
+
+    .modal_contato{
+        width: 75%!important;
+    }
+            
+    #textareaContato{
+        width: 100%;
+    }
+    .btn_modal_contato{
+        width: 75%!important;
+        margin-top: 10px!important;
+        font-size: 1.3rem!important;
+        padding: 10px!important;
+    }
+
+    .modal_aviso-form{
+        margin-top: 200px!important;
+        width: 70%!important;
+    }
+
+
+
+}

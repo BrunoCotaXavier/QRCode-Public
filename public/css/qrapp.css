@@ -1,0 +1,14 @@
+body{
+    background-image: url('/upload/back-app.jpg')!important;
+    background-repeat: round!important;
+    backdrop-filter: brightness(55%);
+    background-attachment: fixed!important;
+}
+
+@media screen and (max-width: 750px) and (min-width: 0px){
+
+    body{
+        background-image: url('/upload/back-app-mobile.png')!important;
+    }
+
+}

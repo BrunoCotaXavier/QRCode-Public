@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="/css/relatorio.css">
+        <title>Relatório Clientes</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossOrigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <body>
+        <table id="table">
+            <thead>
+                <th onclick="ordena('id_cliente')">ID</th>
+                <th onclick="ordena('cliente')">Cliente</th>
+                <th onclick="ordena('email')">Email</th>
+                <th onclick="ordena('data_criacao')">Data Cadastro</th>
+                <th onclick="ordena('tipo_qrcode')">Tipo</th>
+                <th onclick="ordena('visitas_android')">Android</th>
+                <th onclick="ordena('visitas_apple')">Apple</th>
+                <th onclick="ordena('total')">TOTAL</th>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <button onclick="exibeDados()" class="btn_relatorio">Atualizar</button>
+
+        <script type="text/javascript" src="js/relatorioClientesGeral.js"></script>
+    </body>
+</html>

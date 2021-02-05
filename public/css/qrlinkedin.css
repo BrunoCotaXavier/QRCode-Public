@@ -1,0 +1,31 @@
+body{
+    background-image: url('/upload/back-linkedin.jpg')!important;
+    background-repeat: round!important;
+    backdrop-filter: brightness(55%);
+    background-attachment: fixed!important;
+}
+
+#formQRCode{
+    padding: 40px 19px 40px 10px!important;
+}
+
+.btn_mobile{
+    display: none;
+}
+
+@media screen and (max-width: 750px) and (min-width: 0px){
+
+    body{
+        background-image: url('/upload/back-linkedin-mobile.png')!important;
+    }
+
+    #formQRCode{
+        padding-top: 10px!important;
+        padding-right: 10px!important;
+    }
+
+    .btn_mobile{
+        display: block;
+    }
+
+}
